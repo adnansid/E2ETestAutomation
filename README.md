@@ -18,10 +18,6 @@ A .NET Playwright end-to-end test automation project designed to test a sample w
 4. [Configuration](#configuration)  
 5. [Running Tests](#running-tests)  
 6. [Generating Test Reports](#generating-test-reports)  
-7. [Folder-by-Folder Overview](#folder-by-folder-overview)  
-8. [Contributing](#contributing)  
-9. [License](#license)
-
 ---
 
 ## Prerequisites
@@ -86,8 +82,6 @@ playwright install
 
 
 
-⸻
-
 Configuration
 	•	appsettings.json
 Contains settings like the base URL, browser launch configurations, and database connection strings.
@@ -118,7 +112,6 @@ Ensure that appsettings.json is copied to the output directory. If using Visual 
 
 
 
-⸻
 
 Running Tests
 1.	Build the Project:
@@ -143,7 +136,6 @@ dotnet test --filter "AddToCartWithDatabase"
 
 Playwright will launch the browser based on the settings in PageTest.cs and appsettings.json.
 
-⸻
 
 Generating Test Reports
 1.	Generate a TRX Report:
@@ -169,41 +161,5 @@ reportgenerator -reports:TestResults.trx -targetdir:TestReport -reporttypes:Html
 
 	•	Open TestReport/index.html in your browser.
 
-⸻
-
-Folder-by-Folder Overview
-	•	Tests:
-Contains all test classes using NUnit and Playwright.
-	•	PageTest.cs: Base test class that launches the browser, sets up contexts, etc.
-	•	LoginTests.cs, AddToCardPageWithDatabaseTest.cs: Individual test cases.
-	•	Pages:
-Houses Page Object Model classes (e.g., LoginPage.cs, AddToCartPage.cs).
-Contains locators and methods for interacting with the application.
-	•	Utilities:
-	•	DatabaseHelper.cs: Encapsulates database logic (MySQL, SQLite, etc.).
-	•	TestData.cs: Model and helper for loading test data from JSON.
-	•	ConfigReader.cs: Reads configuration values from appsettings.json.
-	•	DummyData:
-Contains sample JSON data files (e.g., DummyData.json) used by tests.
-	•	Reports:
-Output folder for test reports (HTML, TRX, etc.).
-	•	config:
-Contains configuration files such as appsettings.json and related utilities.
-
-⸻
-
-Contributing
-	1.	Fork the repository and create a feature branch.
-	2.	Commit your changes with clear and descriptive messages.
-	3.	Open a Pull Request against the main branch.
-	4.	Review and merge the changes.
-
-⸻
-
-License
-
-This project is licensed under the terms of your chosen license (e.g., MIT, Apache 2.0). Update this section with the actual license details.
-
-⸻
 
 Feel free to reach out if you have any questions or run into issues.
