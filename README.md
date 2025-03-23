@@ -65,16 +65,16 @@ E2ETestAutomation/
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/YourOrg/E2ETestAutomation.git
+   git clone https://github.com/adnansid/E2ETestAutomation.git
    cd E2ETestAutomation
 
-	2.	Install Dependencies:
+2.	Install Dependencies:
 
 dotnet restore
 
 This installs all NuGet packages (including Playwright, NUnit, and configuration packages).
 
-	3.	(Optional) Install Playwright Browsers:
+3.	(Optional) Install Playwright Browsers:
 If you need to install or update the browsers used by Playwright:
 
 npx playwright install
@@ -121,12 +121,12 @@ Ensure that appsettings.json is copied to the output directory. If using Visual 
 ⸻
 
 Running Tests
-	1.	Build the Project:
+1.	Build the Project:
 
 dotnet build
 
 
-	2.	Run All Tests:
+2.	Run All Tests:
 
 dotnet test
 
@@ -135,7 +135,7 @@ Or run a specific test/filter:
 dotnet test --filter "TestNameOrCategory"
 
 
-	3.	Example:
+3.	Example:
 
 dotnet test --filter "AddToCartWithDatabase"
 
@@ -146,12 +146,12 @@ Playwright will launch the browser based on the settings in PageTest.cs and apps
 ⸻
 
 Generating Test Reports
-	1.	Generate a TRX Report:
+1.	Generate a TRX Report:
 
 dotnet test --logger "trx;LogFileName=TestResults.trx"
 
 
-	2.	Convert TRX to HTML using ReportGenerator:
+2.	Convert TRX to HTML using ReportGenerator:
 	•	Install the tool if not already installed:
 
 dotnet tool install -g dotnet-reportgenerator-globaltool
