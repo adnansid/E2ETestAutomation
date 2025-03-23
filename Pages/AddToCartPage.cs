@@ -80,7 +80,6 @@ namespace E2ETestAutomation.Pages
             _selectors = new LocatorCollection(page);
         }
 
-        // Step-by-step methods for the Add to Cart process
         public async Task NavigateToDressTab()
         {
             await _selectors.DressTab.ClickAsync();

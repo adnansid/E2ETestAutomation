@@ -27,7 +27,7 @@ namespace E2ETestAutomation
             if (bool.TryParse(_configuration["BrowserConfig:Headless"], out bool result))
                 return result;
 
-            return false; // default
+            return false;
         }
 
         public static string[] GetBrowserArgs()

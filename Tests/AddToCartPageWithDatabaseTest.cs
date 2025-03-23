@@ -5,7 +5,7 @@ using E2ETestAutomation.Pages;
 using System.IO;
 using System.Threading.Tasks;
 using E2ETestAutomation.Pages.Interfaces;
-using E2ETestAutomation.Utilities; // <-- for DatabaseHelper
+using E2ETestAutomation.Utilities; 
 using System;
 
 namespace E2ETestAutomation.Tests
@@ -30,12 +30,10 @@ namespace E2ETestAutomation.Tests
         [Timeout(60000)]
         public async Task AddToCartWithDatabase()
         {
-            // --- Application steps ---
             // Login
             await _loginPage.GotoLoginPage();
             await _loginPage.LoginAction(_testData[1].Username, _testData[1].Password);
 
-            // Navigate and perform cart operations
             await _addToCartPage.NavigateToDressTab();
             await _addToCartPage.SelectBlouse();            
             await _addToCartPage.AddWhiteBlouseToCart();
@@ -44,7 +42,7 @@ namespace E2ETestAutomation.Tests
             await _addToCartPage.AddressCheckout();
             await _addToCartPage.ShippingCheckout();
 
-            // --- Database check
+            // Database check
             try
             {
                 var price = await DatabaseHelper.GetPriceAsync();

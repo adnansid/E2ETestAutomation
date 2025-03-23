@@ -6,11 +6,6 @@ namespace E2ETestAutomation.Utilities
 {
     public static class DatabaseHelper
     {
-        /// <summary>
-        /// Opens a MySQL connection using the connection string from configuration,
-        /// queries for a price from the "imaginary_orders" table, and returns it as a decimal.
-        /// </summary>
-        /// <returns>The retrieved price.</returns>
         /// <exception cref="InvalidOperationException">
         /// Thrown when the database cannot be accessed, the query returns no data,
         /// or the price cannot be converted.

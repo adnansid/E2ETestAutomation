@@ -18,8 +18,6 @@ namespace E2ETestAutomation.Tests
         [SetUp]
         public async Task SetupAsync()
         {
-            // Use the TestDataHelper from the Utilities folder to load test data.
-            // Update the path if needed. In this example, the JSON file remains in the DummyData folder.
             var jsonPath = Path.Combine(Directory.GetCurrentDirectory(), "DummyData", "DummyData.json");
 
             _testData = await TestDataHelper.LoadTestDataAsync(jsonPath);
@@ -31,7 +29,6 @@ namespace E2ETestAutomation.Tests
 
             TestContext.WriteLine($"Loaded test data: Username={_testData[0].Username}, Password={_testData[0].Password}");
 
-            // Initialize the login page using the Playwright Page from PageTest.
             _loginPage = new LoginPage(Page);
         }
 

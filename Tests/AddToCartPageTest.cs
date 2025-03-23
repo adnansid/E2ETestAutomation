@@ -65,7 +65,6 @@ namespace E2ETestAutomation.Tests
             await Expect(_addToCartPage.AsserShippingPage).ToHaveTextAsync("Shipping:");
             await _addToCartPage.ShippingCheckout();
 
-            // Price and quantity assertions
             await Expect(_addToCartPage.UnitPrice).ToBeVisibleAsync();
             var unitPriceText = await _addToCartPage.UnitPrice.TextContentAsync();
             var unitPrice = await _addToCartPage.RemoveDollarAndConvert(unitPriceText ?? string.Empty);
