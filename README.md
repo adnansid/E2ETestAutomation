@@ -31,7 +31,7 @@ A .NET Playwright end-to-end test automation project designed to test a sample w
 ---
 
 ## Project Structure
-'''
+```
 E2ETestAutomation/
 │
 ├─ bin/                      # Build output (ignored by .gitignore)
@@ -58,7 +58,7 @@ E2ETestAutomation/
 ├─ E2ETestAutomation.csproj
 ├─ README.md                 # Project documentation
 └─ appsettings.json          # Configuration file (copied to bin folder on build)
-'''
+```
 ---
 
 ## Installation
