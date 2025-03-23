@@ -1,0 +1,62 @@
+############################
+# OS-Specific
+############################
+.DS_Store
+Thumbs.db
+
+############################
+# Build and Package Outputs
+############################
+bin/
+obj/
+
+# NuGet Packages
+*.nupkg
+# NuGet Symbols
+*.snupkg
+# NuGet Packages Cache
+packages/
+
+############################
+# .NET and Visual Studio
+############################
+# Visual Studio artifact files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.pdb
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+############################
+# Playwright and Test Outputs
+############################
+# Playwright test reports (if generated)
+playwright-report/
+test-results/
+reports/
+TestReport/
+
+# TRX / XML test results
+*.trx
+*.xml
+
+############################
+# Configuration Files
+############################
+# (If you store secrets in appsettings.*.json, consider ignoring them if they contain sensitive info)
+# Example:
+# appsettings.Development.json
+
+############################
+# Logs
+############################
+*.log
+logs/

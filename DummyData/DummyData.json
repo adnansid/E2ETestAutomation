@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "first_name": "Test",
+        "last_name": "User3",
+        "username" : "ricojiv.benevib@gotgel.org",
+        "password" : "TestUser1"
+    },
+    {
+        "id": 2,
+        "first_name": "Test",
+        "last_name": "User2",
+        "username" : "test.user2@gotgel.org",
+        "password" : "pSKp5VQF"
+        
+    },
+    {
+        "id": 3,
+        "first_name": "Test",
+        "last_name": "User3",
+        "username" : "test.user3@gotgel.org",
+        "password" : "TestUser3"
+    
+    },
+    {
+    "male": "Mr.",
+    "female": "Mrs."
+    
+    }]
+    
